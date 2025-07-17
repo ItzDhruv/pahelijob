@@ -12,118 +12,118 @@ import { Search, Building2, MapPin, Star, Filter, Users } from 'lucide-react';
 // Static data for 500+ companies
 const companies = [
   // IT Giants
-  { name: 'TCS', logo: '🏢', jobs: 5, rating: 4.2, location: 'Mumbai', category: 'IT Services', employees: '500K+', description: 'Leading IT services and consulting company' },
-  { name: 'Infosys', logo: '💼', jobs: 4, rating: 4.1, location: 'Bangalore', category: 'IT Services', employees: '250K+', description: 'Global leader in consulting and technology services' },
-  { name: 'Wipro', logo: '🔷', jobs: 5, rating: 4.0, location: 'Pune', category: 'IT Services', employees: '200K+', description: 'Digital transformation and consulting services' },
-  { name: 'Accenture', logo: '🌟', jobs: 4, rating: 4.3, location: 'Hyderabad', category: 'Consulting', employees: '700K+', description: 'Global professional services company' },
-  { name: 'Cognizant', logo: '⚡', jobs: 5, rating: 3.9, location: 'Chennai', category: 'IT Services', employees: '350K+', description: 'Multinational technology company' },
-  { name: 'HCL Technologies', logo: '🚀', jobs: 4, rating: 4.0, location: 'Noida', category: 'IT Services', employees: '200K+', description: 'Technology and services company' },
-  { name: 'Tech Mahindra', logo: '🔧', jobs: 5, rating: 3.8, location: 'Mumbai', category: 'IT Services', employees: '150K+', description: 'Digital transformation solutions' },
-  { name: 'IBM', logo: '💻', jobs: 4, rating: 4.2, location: 'Bangalore', category: 'Technology', employees: '350K+', description: 'Multinational technology corporation' },
+  { name: 'TCS', logoUrl: 'https://logo.clearbit.com/tcs.com', jobs: 5, rating: 4.2, location: 'Mumbai', category: 'IT Services', employees: '500K+', description: 'Leading IT services and consulting company' },
+  { name: 'Infosys', logoUrl: 'https://logo.clearbit.com/infosys.com', jobs: 4, rating: 4.1, location: 'Bangalore', category: 'IT Services', employees: '250K+', description: 'Global leader in consulting and technology services' },
+  { name: 'Wipro', logoUrl: 'https://logo.clearbit.com/wipro.com', jobs: 5, rating: 4.0, location: 'Pune', category: 'IT Services', employees: '200K+', description: 'Digital transformation and consulting services' },
+  { name: 'Accenture', logoUrl: 'https://logo.clearbit.com/accenture.com', jobs: 4, rating: 4.3, location: 'Hyderabad', category: 'Consulting', employees: '700K+', description: 'Global professional services company' },
+  { name: 'Cognizant', logoUrl: 'https://logo.clearbit.com/cognizant.com', jobs: 5, rating: 3.9, location: 'Chennai', category: 'IT Services', employees: '350K+', description: 'Multinational technology company' },
+  { name: 'HCL Technologies', logoUrl: 'https://logo.clearbit.com/hcltech.com', jobs: 4, rating: 4.0, location: 'Noida', category: 'IT Services', employees: '200K+', description: 'Technology and services company' },
+  { name: 'Tech Mahindra', logoUrl: 'https://logo.clearbit.com/techmahindra.com', jobs: 5, rating: 3.8, location: 'Mumbai', category: 'IT Services', employees: '150K+', description: 'Digital transformation solutions' },
+  { name: 'IBM', logoUrl: 'https://logo.clearbit.com/ibm.com', jobs: 4, rating: 4.2, location: 'Bangalore', category: 'Technology', employees: '350K+', description: 'Multinational technology corporation' },
   
   // Product Companies
-  { name: 'Microsoft', logo: '🪟', jobs: 4, rating: 4.5, location: 'Hyderabad', category: 'Technology', employees: '220K+', description: 'Software and cloud computing company' },
-  { name: 'Google', logo: '🌈', jobs: 5, rating: 4.6, location: 'Bangalore', category: 'Technology', employees: '170K+', description: 'Internet services and products' },
-  { name: 'Amazon', logo: '📦', jobs: 5, rating: 4.1, location: 'Mumbai', category: 'E-commerce', employees: '1.5M+', description: 'E-commerce and cloud computing' },
-  { name: 'Apple', logo: '🍎', jobs: 4, rating: 4.4, location: 'Bangalore', category: 'Technology', employees: '165K+', description: 'Consumer electronics and software' },
-  { name: 'Meta', logo: '📘', jobs: 4, rating: 4.2, location: 'Hyderabad', category: 'Social Media', employees: '87K+', description: 'Social media and virtual reality' },
-  { name: 'Netflix', logo: '🎬', jobs: 4, rating: 4.3, location: 'Mumbai', category: 'Entertainment', employees: '12K+', description: 'Streaming entertainment service' },
-  { name: 'Adobe', logo: '🎨', jobs: 5, rating: 4.4, location: 'Bangalore', category: 'Software', employees: '26K+', description: 'Digital media and marketing software' },
-  { name: 'Salesforce', logo: '☁️', jobs: 4, rating: 4.3, location: 'Hyderabad', category: 'Cloud', employees: '80K+', description: 'Customer relationship management' },
+  { name: 'Microsoft', logoUrl: 'https://logo.clearbit.com/microsoft.com', jobs: 4, rating: 4.5, location: 'Hyderabad', category: 'Technology', employees: '220K+', description: 'Software and cloud computing company' },
+  { name: 'Google', logoUrl: 'https://logo.clearbit.com/google.com', jobs: 5, rating: 4.6, location: 'Bangalore', category: 'Technology', employees: '170K+', description: 'Internet services and products' },
+  { name: 'Amazon', logoUrl: 'https://logo.clearbit.com/amazon.com', jobs: 5, rating: 4.1, location: 'Mumbai', category: 'E-commerce', employees: '1.5M+', description: 'E-commerce and cloud computing' },
+  { name: 'Apple', logoUrl: 'https://logo.clearbit.com/apple.com', jobs: 4, rating: 4.4, location: 'Bangalore', category: 'Technology', employees: '165K+', description: 'Consumer electronics and software' },
+  { name: 'Meta', logoUrl: 'https://logo.clearbit.com/meta.com', jobs: 4, rating: 4.2, location: 'Hyderabad', category: 'Social Media', employees: '87K+', description: 'Social media and virtual reality' },
+  { name: 'Netflix', logoUrl: 'https://logo.clearbit.com/netflix.com', jobs: 4, rating: 4.3, location: 'Mumbai', category: 'Entertainment', employees: '12K+', description: 'Streaming entertainment service' },
+  { name: 'Adobe', logoUrl: 'https://logo.clearbit.com/adobe.com', jobs: 5, rating: 4.4, location: 'Bangalore', category: 'Software', employees: '26K+', description: 'Digital media and marketing software' },
+  { name: 'Salesforce', logoUrl: 'https://logo.clearbit.com/salesforce.com', jobs: 4, rating: 4.3, location: 'Hyderabad', category: 'Cloud', employees: '80K+', description: 'Customer relationship management' },
   
   // Startups & Unicorns
-  { name: 'Flipkart', logo: '🛒', jobs: 5, rating: 4.0, location: 'Bangalore', category: 'E-commerce', employees: '40K+', description: 'E-commerce marketplace' },
-  { name: 'Zomato', logo: '🍕', jobs: 4, rating: 3.9, location: 'Gurgaon', category: 'Food Tech', employees: '5K+', description: 'Food delivery platform' },
-  { name: 'Swiggy', logo: '🥘', jobs: 5, rating: 4.1, location: 'Bangalore', category: 'Food Tech', employees: '6K+', description: 'Food delivery and quick commerce' },
-  { name: 'Paytm', logo: '💳', jobs: 4, rating: 3.8, location: 'Noida', category: 'FinTech', employees: '20K+', description: 'Digital payments platform' },
-  { name: 'Ola', logo: '🚗', jobs: 5, rating: 3.7, location: 'Bangalore', category: 'Transportation', employees: '5K+', description: 'Ride-hailing platform' },
-  { name: 'Uber', logo: '🚕', jobs: 4, rating: 4.0, location: 'Hyderabad', category: 'Transportation', employees: '32K+', description: 'Global ride-sharing platform' },
-  { name: 'BYJU\'S', logo: '📚', jobs: 5, rating: 3.6, location: 'Bangalore', category: 'EdTech', employees: '50K+', description: 'Educational technology platform' },
-  { name: 'Unacademy', logo: '🎓', jobs: 4, rating: 3.8, location: 'Bangalore', category: 'EdTech', employees: '3K+', description: 'Online learning platform' },
+  { name: 'Flipkart', logoUrl: 'https://logo.clearbit.com/flipkart.com', jobs: 5, rating: 4.0, location: 'Bangalore', category: 'E-commerce', employees: '40K+', description: 'E-commerce marketplace' },
+  { name: 'Zomato', logoUrl: 'https://logo.clearbit.com/zomato.com', jobs: 4, rating: 3.9, location: 'Gurgaon', category: 'Food Tech', employees: '5K+', description: 'Food delivery platform' },
+  { name: 'Swiggy', logoUrl: 'https://logo.clearbit.com/swiggy.com', jobs: 5, rating: 4.1, location: 'Bangalore', category: 'Food Tech', employees: '6K+', description: 'Food delivery and quick commerce' },
+  { name: 'Paytm', logoUrl: 'https://logo.clearbit.com/paytm.com', jobs: 4, rating: 3.8, location: 'Noida', category: 'FinTech', employees: '20K+', description: 'Digital payments platform' },
+  { name: 'Ola', logoUrl: 'https://logo.clearbit.com/ola.com', jobs: 5, rating: 3.7, location: 'Bangalore', category: 'Transportation', employees: '5K+', description: 'Ride-hailing platform' },
+  { name: 'Uber', logoUrl: 'https://logo.clearbit.com/uber.com', jobs: 4, rating: 4.0, location: 'Hyderabad', category: 'Transportation', employees: '32K+', description: 'Global ride-sharing platform' },
+  { name: 'BYJU\'S', logoUrl: 'https://logo.clearbit.com/byjus.com', jobs: 5, rating: 3.6, location: 'Bangalore', category: 'EdTech', employees: '50K+', description: 'Educational technology platform' },
+  { name: 'Unacademy', logoUrl: 'https://logo.clearbit.com/unacademy.com', jobs: 4, rating: 3.8, location: 'Bangalore', category: 'EdTech', employees: '3K+', description: 'Online learning platform' },
   
   // Banking & Financial Services
-  { name: 'HDFC Bank', logo: '🏦', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Banking', employees: '120K+', description: 'Private sector bank' },
-  { name: 'ICICI Bank', logo: '🏛️', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Banking', employees: '100K+', description: 'Multinational bank' },
-  { name: 'SBI', logo: '🏢', jobs: 4, rating: 3.9, location: 'Mumbai', category: 'Banking', employees: '250K+', description: 'Public sector bank' },
-  { name: 'Axis Bank', logo: '📊', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Banking', employees: '80K+', description: 'Private sector bank' },
-  { name: 'Kotak Mahindra', logo: '💰', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Banking', employees: '40K+', description: 'Banking and financial services' },
-  { name: 'Yes Bank', logo: '✅', jobs: 4, rating: 3.7, location: 'Mumbai', category: 'Banking', employees: '25K+', description: 'Private sector bank' },
+  { name: 'HDFC Bank', logoUrl: 'https://logo.clearbit.com/hdfc.com', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Banking', employees: '120K+', description: 'Private sector bank' },
+  { name: 'ICICI Bank', logoUrl: 'https://logo.clearbit.com/icici.com', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Banking', employees: '100K+', description: 'Multinational bank' },
+  { name: 'SBI', logoUrl: 'https://logo.clearbit.com/sbi.com', jobs: 4, rating: 3.9, location: 'Mumbai', category: 'Banking', employees: '250K+', description: 'Public sector bank' },
+  { name: 'Axis Bank', logoUrl: 'https://logo.clearbit.com/axis.com', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Banking', employees: '80K+', description: 'Private sector bank' },
+  { name: 'Kotak Mahindra', logoUrl: 'https://logo.clearbit.com/kotak.com', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Banking', employees: '40K+', description: 'Banking and financial services' },
+  { name: 'Yes Bank', logoUrl: 'https://logo.clearbit.com/yesbank.com', jobs: 4, rating: 3.7, location: 'Mumbai', category: 'Banking', employees: '25K+', description: 'Private sector bank' },
   
   // Consulting Firms
-  { name: 'Deloitte', logo: '🔹', jobs: 5, rating: 4.2, location: 'Mumbai', category: 'Consulting', employees: '415K+', description: 'Professional services network' },
-  { name: 'PwC', logo: '🏛️', jobs: 4, rating: 4.1, location: 'Bangalore', category: 'Consulting', employees: '328K+', description: 'Professional services firm' },
-  { name: 'EY', logo: '🔷', jobs: 5, rating: 4.0, location: 'Gurgaon', category: 'Consulting', employees: '400K+', description: 'Multinational professional services' },
-  { name: 'KPMG', logo: '📈', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Consulting', employees: '270K+', description: 'Audit and advisory services' },
-  { name: 'McKinsey', logo: '⭐', jobs: 4, rating: 4.5, location: 'Mumbai', category: 'Consulting', employees: '38K+', description: 'Management consulting firm' },
-  { name: 'BCG', logo: '🔸', jobs: 4, rating: 4.4, location: 'Gurgaon', category: 'Consulting', employees: '25K+', description: 'Management consulting company' },
+  { name: 'Deloitte', logoUrl: 'https://logo.clearbit.com/deloitte.com', jobs: 5, rating: 4.2, location: 'Mumbai', category: 'Consulting', employees: '415K+', description: 'Professional services network' },
+  { name: 'PwC', logoUrl: 'https://logo.clearbit.com/pwc.com', jobs: 4, rating: 4.1, location: 'Bangalore', category: 'Consulting', employees: '328K+', description: 'Professional services firm' },
+  { name: 'EY', logoUrl: 'https://logo.clearbit.com/ey.com', jobs: 5, rating: 4.0, location: 'Gurgaon', category: 'Consulting', employees: '400K+', description: 'Multinational professional services' },
+  { name: 'KPMG', logoUrl: 'https://logo.clearbit.com/kpmg.com', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Consulting', employees: '270K+', description: 'Audit and advisory services' },
+  { name: 'McKinsey', logoUrl: 'https://logo.clearbit.com/mckinsey.com', jobs: 4, rating: 4.5, location: 'Mumbai', category: 'Consulting', employees: '38K+', description: 'Management consulting firm' },
+  { name: 'BCG', logoUrl: 'https://logo.clearbit.com/bcg.com', jobs: 4, rating: 4.4, location: 'Gurgaon', category: 'Consulting', employees: '25K+', description: 'Management consulting company' },
   
   // Manufacturing
-  { name: 'Reliance', logo: '⚡', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Energy', employees: '200K+', description: 'Conglomerate company' },
-  { name: 'L&T', logo: '🏗️', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Engineering', employees: '150K+', description: 'Engineering and construction' },
-  { name: 'Mahindra', logo: '🚜', jobs: 5, rating: 3.9, location: 'Mumbai', category: 'Automotive', employees: '260K+', description: 'Multinational automotive corporation' },
-  { name: 'Bajaj', logo: '🏍️', jobs: 4, rating: 4.0, location: 'Pune', category: 'Automotive', employees: '40K+', description: 'Automotive manufacturer' },
-  { name: 'Hero MotoCorp', logo: '🏍️', jobs: 4, rating: 3.8, location: 'Gurgaon', category: 'Automotive', employees: '8K+', description: 'Motorcycle manufacturer' },
-  { name: 'Maruti Suzuki', logo: '🚗', jobs: 5, rating: 4.1, location: 'Gurgaon', category: 'Automotive', employees: '17K+', description: 'Automobile manufacturer' },
+  { name: 'Reliance', logoUrl: 'https://logo.clearbit.com/reliance.com', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Energy', employees: '200K+', description: 'Conglomerate company' },
+  { name: 'L&T', logoUrl: 'https://logo.clearbit.com/lnt.com', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Engineering', employees: '150K+', description: 'Engineering and construction' },
+  { name: 'Mahindra', logoUrl: 'https://logo.clearbit.com/mahindra.com', jobs: 5, rating: 3.9, location: 'Mumbai', category: 'Automotive', employees: '260K+', description: 'Multinational automotive corporation' },
+  { name: 'Bajaj', logoUrl: 'https://logo.clearbit.com/bajaj.com', jobs: 4, rating: 4.0, location: 'Pune', category: 'Automotive', employees: '40K+', description: 'Automotive manufacturer' },
+  { name: 'Hero MotoCorp', logoUrl: 'https://logo.clearbit.com/hero.com', jobs: 4, rating: 3.8, location: 'Gurgaon', category: 'Automotive', employees: '8K+', description: 'Motorcycle manufacturer' },
+  { name: 'Maruti Suzuki', logoUrl: 'https://logo.clearbit.com/maruti.com', jobs: 5, rating: 4.1, location: 'Gurgaon', category: 'Automotive', employees: '17K+', description: 'Automobile manufacturer' },
   
   // Telecommunications
-  { name: 'Jio', logo: '📱', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Telecom', employees: '50K+', description: 'Telecommunications company' },
-  { name: 'Airtel', logo: '📶', jobs: 4, rating: 3.9, location: 'Gurgaon', category: 'Telecom', employees: '25K+', description: 'Telecommunications services' },
-  { name: 'Vi (Vodafone)', logo: '📳', jobs: 4, rating: 3.7, location: 'Mumbai', category: 'Telecom', employees: '15K+', description: 'Mobile network operator' },
-  { name: 'BSNL', logo: '📞', jobs: 4, rating: 3.6, location: 'New Delhi', category: 'Telecom', employees: '150K+', description: 'Government telecom company' },
+  { name: 'Jio', logoUrl: 'https://logo.clearbit.com/jio.com', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Telecom', employees: '50K+', description: 'Telecommunications company' },
+  { name: 'Airtel', logoUrl: 'https://logo.clearbit.com/airtel.com', jobs: 4, rating: 3.9, location: 'Gurgaon', category: 'Telecom', employees: '25K+', description: 'Telecommunications services' },
+  { name: 'Vi (Vodafone)', logoUrl: 'https://logo.clearbit.com/vi.com', jobs: 4, rating: 3.7, location: 'Mumbai', category: 'Telecom', employees: '15K+', description: 'Mobile network operator' },
+  { name: 'BSNL', logoUrl: 'https://logo.clearbit.com/bsnl.com', jobs: 4, rating: 3.6, location: 'New Delhi', category: 'Telecom', employees: '150K+', description: 'Government telecom company' },
   
   // Healthcare & Pharma
-  { name: 'Sun Pharma', logo: '💊', jobs: 4, rating: 4.0, location: 'Mumbai', category: 'Pharma', employees: '50K+', description: 'Pharmaceutical company' },
-  { name: 'Dr. Reddy\'s', logo: '🏥', jobs: 5, rating: 4.1, location: 'Hyderabad', category: 'Pharma', employees: '25K+', description: 'Pharmaceutical company' },
-  { name: 'Cipla', logo: '💉', jobs: 4, rating: 4.0, location: 'Mumbai', category: 'Pharma', employees: '25K+', description: 'Pharmaceutical company' },
-  { name: 'Apollo Hospitals', logo: '🏥', jobs: 5, rating: 4.2, location: 'Chennai', category: 'Healthcare', employees: '70K+', description: 'Healthcare provider' },
-  { name: 'Fortis Healthcare', logo: '⚕️', jobs: 4, rating: 3.9, location: 'Gurgaon', category: 'Healthcare', employees: '25K+', description: 'Healthcare services' },
+  { name: 'Sun Pharma', logoUrl: 'https://logo.clearbit.com/sunpharma.com', jobs: 4, rating: 4.0, location: 'Mumbai', category: 'Pharma', employees: '50K+', description: 'Pharmaceutical company' },
+  { name: 'Dr. Reddy\'s', logoUrl: 'https://logo.clearbit.com/drreddy.com', jobs: 5, rating: 4.1, location: 'Hyderabad', category: 'Pharma', employees: '25K+', description: 'Pharmaceutical company' },
+  { name: 'Cipla', logoUrl: 'https://logo.clearbit.com/cipla.com', jobs: 4, rating: 4.0, location: 'Mumbai', category: 'Pharma', employees: '25K+', description: 'Pharmaceutical company' },
+  { name: 'Apollo Hospitals', logoUrl: 'https://logo.clearbit.com/apollo.com', jobs: 5, rating: 4.2, location: 'Chennai', category: 'Healthcare', employees: '70K+', description: 'Healthcare provider' },
+  { name: 'Fortis Healthcare', logoUrl: 'https://logo.clearbit.com/fortis.com', jobs: 4, rating: 3.9, location: 'Gurgaon', category: 'Healthcare', employees: '25K+', description: 'Healthcare services' },
   
   // Media & Entertainment
-  { name: 'Zee Entertainment', logo: '📺', jobs: 4, rating: 3.8, location: 'Mumbai', category: 'Media', employees: '8K+', description: 'Media and entertainment' },
-  { name: 'Sony Pictures', logo: '🎬', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Entertainment', employees: '3K+', description: 'Entertainment company' },
-  { name: 'Disney+ Hotstar', logo: '🏰', jobs: 5, rating: 4.2, location: 'Mumbai', category: 'Streaming', employees: '2K+', description: 'Streaming platform' },
-  { name: 'Times Group', logo: '📰', jobs: 4, rating: 3.9, location: 'Mumbai', category: 'Media', employees: '15K+', description: 'Media conglomerate' },
+  { name: 'Zee Entertainment', logoUrl: 'https://logo.clearbit.com/zee.com', jobs: 4, rating: 3.8, location: 'Mumbai', category: 'Media', employees: '8K+', description: 'Media and entertainment' },
+  { name: 'Sony Pictures', logoUrl: 'https://logo.clearbit.com/sony.com', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Entertainment', employees: '3K+', description: 'Entertainment company' },
+  { name: 'Disney+ Hotstar', logoUrl: 'https://logo.clearbit.com/disney.com', jobs: 5, rating: 4.2, location: 'Mumbai', category: 'Streaming', employees: '2K+', description: 'Streaming platform' },
+  { name: 'Times Group', logoUrl: 'https://logo.clearbit.com/times.com', jobs: 4, rating: 3.9, location: 'Mumbai', category: 'Media', employees: '15K+', description: 'Media conglomerate' },
   
   // Retail
-  { name: 'Big Bazaar', logo: '🛍️', jobs: 5, rating: 3.7, location: 'Mumbai', category: 'Retail', employees: '50K+', description: 'Retail chain' },
-  { name: 'Spencer\'s', logo: '🏪', jobs: 4, rating: 3.8, location: 'Kolkata', category: 'Retail', employees: '15K+', description: 'Retail stores' },
-  { name: 'More Supermarkets', logo: '🛒', jobs: 4, rating: 3.6, location: 'Bangalore', category: 'Retail', employees: '20K+', description: 'Supermarket chain' },
-  { name: 'Lifestyle', logo: '👔', jobs: 5, rating: 3.9, location: 'Bangalore', category: 'Fashion', employees: '12K+', description: 'Fashion retail' },
+  { name: 'Big Bazaar', logoUrl: 'https://logo.clearbit.com/bigbazaar.com', jobs: 5, rating: 3.7, location: 'Mumbai', category: 'Retail', employees: '50K+', description: 'Retail chain' },
+  { name: 'Spencer\'s', logoUrl: 'https://logo.clearbit.com/spencers.com', jobs: 4, rating: 3.8, location: 'Kolkata', category: 'Retail', employees: '15K+', description: 'Retail stores' },
+  { name: 'More Supermarkets', logoUrl: 'https://logo.clearbit.com/more.com', jobs: 4, rating: 3.6, location: 'Bangalore', category: 'Retail', employees: '20K+', description: 'Supermarket chain' },
+  { name: 'Lifestyle', logoUrl: 'https://logo.clearbit.com/lifestyle.com', jobs: 5, rating: 3.9, location: 'Bangalore', category: 'Fashion', employees: '12K+', description: 'Fashion retail' },
   
   // Airlines & Travel
-  { name: 'IndiGo', logo: '✈️', jobs: 4, rating: 4.0, location: 'Gurgaon', category: 'Aviation', employees: '25K+', description: 'Low-cost airline' },
-  { name: 'Air India', logo: '🛩️', jobs: 4, rating: 3.8, location: 'Mumbai', category: 'Aviation', employees: '15K+', description: 'National carrier airline' },
-  { name: 'SpiceJet', logo: '🌶️', jobs: 5, rating: 3.7, location: 'Gurgaon', category: 'Aviation', employees: '12K+', description: 'Low-cost airline' },
-  { name: 'MakeMyTrip', logo: '🧳', jobs: 4, rating: 3.9, location: 'Gurgaon', category: 'Travel', employees: '5K+', description: 'Online travel company' },
+  { name: 'IndiGo', logoUrl: 'https://logo.clearbit.com/indigo.com', jobs: 4, rating: 4.0, location: 'Gurgaon', category: 'Aviation', employees: '25K+', description: 'Low-cost airline' },
+  { name: 'Air India', logoUrl: 'https://logo.clearbit.com/airindia.com', jobs: 4, rating: 3.8, location: 'Mumbai', category: 'Aviation', employees: '15K+', description: 'National carrier airline' },
+  { name: 'SpiceJet', logoUrl: 'https://logo.clearbit.com/spicejet.com', jobs: 5, rating: 3.7, location: 'Gurgaon', category: 'Aviation', employees: '12K+', description: 'Low-cost airline' },
+  { name: 'MakeMyTrip', logoUrl: 'https://logo.clearbit.com/makemytrip.com', jobs: 4, rating: 3.9, location: 'Gurgaon', category: 'Travel', employees: '5K+', description: 'Online travel company' },
   
   // Food & Beverage
-  { name: 'Nestle', logo: '🍫', jobs: 4, rating: 4.2, location: 'Gurgaon', category: 'FMCG', employees: '350K+', description: 'Food and beverage company' },
-  { name: 'Unilever', logo: '🧴', jobs: 5, rating: 4.1, location: 'Mumbai', category: 'FMCG', employees: '190K+', description: 'Consumer goods company' },
-  { name: 'ITC', logo: '🏢', jobs: 4, rating: 4.0, location: 'Kolkata', category: 'FMCG', employees: '25K+', description: 'Diversified conglomerate' },
-  { name: 'Britannia', logo: '🍪', jobs: 4, rating: 3.9, location: 'Kolkata', category: 'Food', employees: '25K+', description: 'Food products company' },
+  { name: 'Nestle', logoUrl: 'https://logo.clearbit.com/nestle.com', jobs: 4, rating: 4.2, location: 'Gurgaon', category: 'FMCG', employees: '350K+', description: 'Food and beverage company' },
+  { name: 'Unilever', logoUrl: 'https://logo.clearbit.com/unilever.com', jobs: 5, rating: 4.1, location: 'Mumbai', category: 'FMCG', employees: '190K+', description: 'Consumer goods company' },
+  { name: 'ITC', logoUrl: 'https://logo.clearbit.com/itc.com', jobs: 4, rating: 4.0, location: 'Kolkata', category: 'FMCG', employees: '25K+', description: 'Diversified conglomerate' },
+  { name: 'Britannia', logoUrl: 'https://logo.clearbit.com/britannia.com', jobs: 4, rating: 3.9, location: 'Kolkata', category: 'Food', employees: '25K+', description: 'Food products company' },
   
   // Real Estate
-  { name: 'DLF', logo: '🏠', jobs: 4, rating: 3.8, location: 'Gurgaon', category: 'Real Estate', employees: '8K+', description: 'Real estate developer' },
-  { name: 'Godrej Properties', logo: '🏘️', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Real Estate', employees: '2K+', description: 'Real estate development' },
-  { name: 'Prestige Group', logo: '🏗️', jobs: 4, rating: 3.9, location: 'Bangalore', category: 'Real Estate', employees: '3K+', description: 'Real estate company' },
+  { name: 'DLF', logoUrl: 'https://logo.clearbit.com/dlf.com', jobs: 4, rating: 3.8, location: 'Gurgaon', category: 'Real Estate', employees: '8K+', description: 'Real estate developer' },
+  { name: 'Godrej Properties', logoUrl: 'https://logo.clearbit.com/godrej.com', jobs: 5, rating: 4.0, location: 'Mumbai', category: 'Real Estate', employees: '2K+', description: 'Real estate development' },
+  { name: 'Prestige Group', logoUrl: 'https://logo.clearbit.com/prestige.com', jobs: 4, rating: 3.9, location: 'Bangalore', category: 'Real Estate', employees: '3K+', description: 'Real estate company' },
   
   // Education
-  { name: 'Pearson', logo: '📖', jobs: 4, rating: 4.0, location: 'Chennai', category: 'Education', employees: '22K+', description: 'Education company' },
-  { name: 'Extramarks', logo: '📱', jobs: 5, rating: 3.8, location: 'Noida', category: 'EdTech', employees: '5K+', description: 'Educational technology' },
-  { name: 'Vedantu', logo: '👨‍🏫', jobs: 4, rating: 3.9, location: 'Bangalore', category: 'EdTech', employees: '6K+', description: 'Online tutoring platform' },
+  { name: 'Pearson', logoUrl: 'https://logo.clearbit.com/pearson.com', jobs: 4, rating: 4.0, location: 'Chennai', category: 'Education', employees: '22K+', description: 'Education company' },
+  { name: 'Extramarks', logoUrl: 'https://logo.clearbit.com/extramarks.com', jobs: 5, rating: 3.8, location: 'Noida', category: 'EdTech', employees: '5K+', description: 'Educational technology' },
+  { name: 'Vedantu', logoUrl: 'https://logo.clearbit.com/vedantu.com', jobs: 4, rating: 3.9, location: 'Bangalore', category: 'EdTech', employees: '6K+', description: 'Online tutoring platform' },
   
   // Logistics
-  { name: 'Blue Dart', logo: '📦', jobs: 4, rating: 3.9, location: 'Mumbai', category: 'Logistics', employees: '15K+', description: 'Express logistics' },
-  { name: 'DTDC', logo: '🚚', jobs: 5, rating: 3.7, location: 'Bangalore', category: 'Logistics', employees: '25K+', description: 'Courier services' },
-  { name: 'Delhivery', logo: '📮', jobs: 4, rating: 3.8, location: 'Gurgaon', category: 'Logistics', employees: '45K+', description: 'Supply chain services' },
+  { name: 'Blue Dart', logoUrl: 'https://logo.clearbit.com/bluedart.com', jobs: 4, rating: 3.9, location: 'Mumbai', category: 'Logistics', employees: '15K+', description: 'Express logistics' },
+  { name: 'DTDC', logoUrl: 'https://logo.clearbit.com/dtdc.com', jobs: 5, rating: 3.7, location: 'Bangalore', category: 'Logistics', employees: '25K+', description: 'Courier services' },
+  { name: 'Delhivery', logoUrl: 'https://logo.clearbit.com/delhivery.com', jobs: 4, rating: 3.8, location: 'Gurgaon', category: 'Logistics', employees: '45K+', description: 'Supply chain services' },
   
   // Government & PSU
-  { name: 'ISRO', logo: '🚀', jobs: 4, rating: 4.5, location: 'Bangalore', category: 'Space', employees: '17K+', description: 'Space research organization' },
-  { name: 'DRDO', logo: '🛡️', jobs: 5, rating: 4.3, location: 'New Delhi', category: 'Defense', employees: '30K+', description: 'Defense research organization' },
-  { name: 'ONGC', logo: '⛽', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Oil & Gas', employees: '34K+', description: 'Oil and gas corporation' },
-  { name: 'Coal India', logo: '⚫', jobs: 4, rating: 3.9, location: 'Kolkata', category: 'Mining', employees: '265K+', description: 'Coal mining company' },
-  { name: 'NTPC', logo: '⚡', jobs: 5, rating: 4.2, location: 'New Delhi', category: 'Power', employees: '24K+', description: 'Power generation company' },
-  { name: 'BHEL', logo: '🔧', jobs: 4, rating: 4.0, location: 'New Delhi', category: 'Manufacturing', employees: '43K+', description: 'Heavy engineering company' },
+  { name: 'ISRO', logoUrl: 'https://logo.clearbit.com/isro.com', jobs: 4, rating: 4.5, location: 'Bangalore', category: 'Space', employees: '17K+', description: 'Space research organization' },
+  { name: 'DRDO', logoUrl: 'https://logo.clearbit.com/drdo.com', jobs: 5, rating: 4.3, location: 'New Delhi', category: 'Defense', employees: '30K+', description: 'Defense research organization' },
+  { name: 'ONGC', logoUrl: 'https://logo.clearbit.com/ongc.com', jobs: 4, rating: 4.1, location: 'Mumbai', category: 'Oil & Gas', employees: '34K+', description: 'Oil and gas corporation' },
+  { name: 'Coal India', logoUrl: 'https://logo.clearbit.com/coalindia.com', jobs: 4, rating: 3.9, location: 'Kolkata', category: 'Mining', employees: '265K+', description: 'Coal mining company' },
+  { name: 'NTPC', logoUrl: 'https://logo.clearbit.com/ntpc.com', jobs: 5, rating: 4.2, location: 'New Delhi', category: 'Power', employees: '24K+', description: 'Power generation company' },
+  { name: 'BHEL', logoUrl: 'https://logo.clearbit.com/bhel.com', jobs: 4, rating: 4.0, location: 'New Delhi', category: 'Manufacturing', employees: '43K+', description: 'Heavy engineering company' },
 ];
 
 // Generate more companies to reach 500+
@@ -158,7 +158,7 @@ const additionalCompanies = Array.from({ length: 450 }, (_, i) => {
   }
   return {
     name,
-    logo: ['💼', '🏢', '🔷', '⚡', '🚀', '💻', '🌟', '🔧'][i % 8],
+    logoUrl: `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}`,
     jobs: Math.floor(Math.random() * 5) + 1,
     rating: Number((3.5 + Math.random() * 1.5).toFixed(1)),
     location: ['Mumbai', 'Bangalore', 'Pune', 'Hyderabad', 'Chennai', 'Gurgaon', 'Noida', 'Kolkata'][i % 8],
@@ -326,7 +326,14 @@ export default function CompaniesPage() {
               <Link key={index} href={`/company/${company.name.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '')}`}>
                 <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer group h-full">
                   <CardHeader className="text-center">
-                    <div className="text-4xl mb-2">{company.logo}</div>
+                    <div className="flex justify-center mb-2">
+                      <img
+                        src={company.logoUrl}
+                        alt={company.name + ' logo'}
+                        className="h-12 w-12 object-contain rounded bg-white border"
+                        onError={e => { e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(company.name)}`; }}
+                      />
+                    </div>
                     <CardTitle className="group-hover:text-blue-600 transition-colors text-lg">
                       {company.name}
                     </CardTitle>

@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Search, Building2, MapPin, Star, Filter, Users } from 'lucide-react';
-
+ 
 // Static data for 500+ companies
 const companies = [
   // IT Giants

@@ -8,7 +8,7 @@ export default function Testimonials() {
       role: 'Software Engineer',
       company: 'TechCorp Inc.',
       image: 'https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20confident%20female%20software%20engineer%2C%20modern%20office%20background%2C%20business%20casual%20attire%2C%20smiling%20expression%2C%20natural%20lighting%2C%20professional%20corporate%20photography%20style&width=80&height=80&seq=testimonial-001&orientation=squarish',
-      content: 'JobPortal helped me find my dream job in just 2 weeks. The platform is incredibly user-friendly and the job matching algorithm is spot on!',
+      content: 'PaheliJob helped me find my dream job in just 2 weeks. The platform is incredibly user-friendly and the job matching algorithm is spot on!',
       rating: 5,
     },
     {

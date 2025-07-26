@@ -1,4 +1,4 @@
-// File: D:\job\job-redy\app\jobs\[id]\apply\page.tsx
+// File: D:\job\redy\Frontend\app\jobs\[id]\apply\page.tsx
 import * as entry from '../../../../../../app/jobs/[id]/apply/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

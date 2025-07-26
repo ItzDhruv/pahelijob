@@ -1,6 +1,12 @@
-
 import JobApplication from './JobApplication';
 
+type Props = {
+  params: Promise<{
+    id: string;
+  }>;
+};
+
+// This function tells Next.js to pre-render static pages for these job IDs
 export async function generateStaticParams() {
   return [
     { id: '1' },
@@ -12,6 +18,8 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function JobApplicationPage({ params }: { params: { id: string } }) {
-  return <JobApplication jobId={params.id} />;
+// This is your dynamic route page component
+export default async function JobApplicationPage({ params }: Props) {
+  const { id } = await params;
+  return <JobApplication jobId={id} />;
 }
